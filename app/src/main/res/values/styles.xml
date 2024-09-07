@@ -1,0 +1,217 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashAppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--        <item name="android:windowBackground">@drawable/splash_background</item>-->
+    </style>
+
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loginParent" parent="parent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/loginBkColor</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="headerText" parent="parent">
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="loginHeader">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="loginCard" parent="parent"></style>
+
+    <style name="linearParent" parent="parent">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="modifiedEditText" parent="parent">
+<!--        <item name="android:textSize">@dimen/newsMoreTextSize</item>-->
+        <item name="android:backgroundTint">@color/primaryTextColor</item>
+    </style>
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loginButton" parent="viewParent">
+<!--        <item name="android:background">@drawable/login_button_bk</item>-->
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="boxBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Mendatory" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconTint">@color/md_red_700</item>
+        <item name="endIconDrawable">@drawable/ic_star_red_24dp</item>
+
+
+    </style>
+
+
+    <style name="Widget.App.TextInputLayout.ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="boxBackgroundColor">@color/white</item>
+    </style>
+
+
+
+    <style name="Widget.App.TextInputLayout.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="boxBackgroundColor">@color/white</item>
+        <!--        <item name="boxBackgroundMode">none</item>-->
+        <!--        <item name="enabled">false</item>-->
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Mendatory.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconTint">@color/md_red_700</item>
+        <item name="endIconDrawable">@drawable/ic_star_red_24dp</item>
+        <!--        <item name="boxBackgroundMode">none</item>-->
+        <!--        <item name="enabled">false</item>-->
+    </style>
+
+
+    <style name="Widget.App.TextInputLayout.ExposedDropdownMenu.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="boxBackgroundColor">@color/white</item>
+        <!--        <item name="boxBackgroundMode">none</item>-->
+        <!--        <item name="enabled">false</item>-->
+    </style>
+
+
+
+    <style name="Widget.App.MaterialTextView.Bold" parent="Widget.MaterialComponents.TextView">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="Widget.App.HeadLine" parent="TextAppearance.MaterialComponents.Headline5">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="android:textColor">@color/logo_blue</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="Widget.App.SubTitle" parent="TextAppearance.MaterialComponents.Subtitle2">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <item name="android:textColor">@color/logo_blue</item>
+        <item name="android:textStyle">italic</item>
+
+    </style>
+
+    <style name="Widget.App.MaterialButton" parent="Widget.MaterialComponents.Button">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <!--        <item name="android:textColor">@color/md_black_1000</item>-->
+        <!--        <item name="android:textStyle">bold</item>-->
+
+    </style>
+
+    <style name="Widget.App.MaterialButton.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+
+        <!--        <item name="hintTextColor">?attr/colorOnSurface</item>-->
+        <!--        <item name="android:textColor">@color/md_black_1000</item>-->
+        <!--        <item name="android:textStyle">bold</item>-->
+
+    </style>
+
+    <style name="Widget.App.Button.IconOnly" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Blue" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
+        <item name="android:textColor">@color/md_black_700</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="iconTint">@color/md_black_700</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:elevation">10dp</item>
+    </style>
+    <!-- Set parent theme as app theme. -->
+    <style name="DialogTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="DialogTheme1" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+</resources>

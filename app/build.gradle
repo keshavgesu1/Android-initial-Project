@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'koin'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.smarttask"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+kapt {
+    javacOptions {
+        option("-Adagger.hilt.android.internal.disableAndroidSuperclassValidation=true")
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_extensions_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_extensions_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_extensions_version"
+    implementation "androidx.preference:preference-ktx:$preference_ktx_version"
+    implementation "androidx.legacy:legacy-support-v4:$support_version"
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    implementation "com.google.android.material:material:$material_design_version"
+
+
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_logging_version"
+
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
+
+    //Koin
+    implementation "org.koin:koin-androidx-scope:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+    implementation "org.koin:koin-androidx-fragment:$koin_version"
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // Inapp Update
+    implementation 'com.google.android.play:core:1.10.3'
+
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

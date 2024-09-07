@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SmartTask</string>
+
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="otp">Enter OTP</string>
+    <string name="loading_please_wait">Loading please wait...</string>
+    <string name="validating_user">Validating user, please wait...</string>
+
+
+</resources>

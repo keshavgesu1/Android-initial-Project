@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+
+    <color name="colorHomeToolbarTexts">#FFFFFF</color>
+
+    <color name="colorConfirmed">#FFEB3B</color>
+    <color name="colorRecovered">#4CAF50</color>
+    <color name="colorDeaths">#FD2C2C</color>
+    <color name="colorTransparent">#00171B1E</color>
+
+
+
+    <color name="colorHomeToolbar">#ffab40</color>
+
+    <!--    <color name="colorPrimary">#EF6C00</color>-->
+    <color name="primaryLightColor">#ffdd71</color>
+
+    <color name="secondaryColor">#ff6d00</color>
+    <color name="secondaryLightColor">#ff9e40</color>
+    <color name="secondaryDarkColor">#c43c00</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="orange_900">#E65100</color>
+    <color name="logo_blue">#002365</color>
+    <color name="md_black_700">#000000</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="md_red_700">#D32F2F</color>
+
+
+
+    <color name="white">#fff</color>
+
+
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <!--    <color name="primaryTextColor">#2661FA</color>-->
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+
+
+</resources>
